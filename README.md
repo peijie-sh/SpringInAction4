@@ -9,7 +9,7 @@
 
 ### 3. 高级装配
 
-## 4. 面向切面的Spring
+### 4. 面向切面的Spring
 
 ## 第二部分 Web中的Spring
 ### 5. 构建Spring Web应用程序
