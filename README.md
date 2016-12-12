@@ -1,3 +1,35 @@
 # SpringInAction4
 《Spring In Action 4th》学习笔记
 ---
+
+## 第一部分 Spring的核心
+### 1. Spring之旅
+
+### 2. 装配Bean
+
+### 3. 高级装配
+
+## 4. 面向切面的Spring
+
+## 第二部分 Web中的Spring
+### 5. 构建Spring Web应用程序
+[最简单的mvc](https://github.com/peijie-sh/SpringInAction4/tree/master/MyMvc)
+
+### 6. 渲染Web视图
+### 7. Spring Mvc的高级技术
+### 8. 使用Spring Web Flow
+### 9. 保护Web应用
+## 第三部分 后端中的Spring
+### 10. 通过Spring和JDBC征服数据库
+### 11. 使用对象-关系映射持久化数据
+### 12. 使用NoSQL数据库
+### 13. 缓存数据
+### 14. 保护方法应用
+## 第四部分 Spring集成
+### 15. 使用远程服务
+### 16. 使用Spring MVC创建REST API
+### 17. Spring消息
+### 18. 使用WebSocket和STOMP实现消息功能
+### 19. 使用Spring发送Email
+### 20. 使用JMX管理Spring Bean
+### 21. 借助Spring Boot简化Spring开发
