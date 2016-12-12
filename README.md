@@ -14,6 +14,7 @@
 ## 第二部分 Web中的Spring
 ### 5. 构建Spring Web应用程序
 [最简单的Spring MVC](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-basic)
+[路径参数 & 表单提交](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr)
 
 ### 6. 渲染Web视图
 ### 7. Spring Mvc的高级技术
