@@ -13,7 +13,7 @@
 
 ## 第二部分 Web中的Spring
 ### 5. 构建Spring Web应用程序
-[最简单的mvc](https://github.com/peijie-sh/SpringInAction4/tree/master/MyMvc-basic)
+[最简单的Spring MVC](https://github.com/peijie-sh/SpringInAction4/tree/master/MyMvc-basic)
 
 ### 6. 渲染Web视图
 ### 7. Spring Mvc的高级技术
