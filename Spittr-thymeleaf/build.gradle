@@ -1,0 +1,64 @@
+apply plugin: 'eclipse'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
+dependencies {
+	compile "org.springframework:spring-webmvc:$springVersion"
+	compile "org.springframework:spring-jdbc:$springVersion"
+	compile "com.h2database:h2:$h2Version"
+	compile "org.hibernate:hibernate-validator:$hibernateValidatorVersion"
+	compile "org.apache.commons:commons-lang3:$commonsLangVersion"
+	compile "org.thymeleaf:thymeleaf-spring4:$thymeleafVersion"
+
+    providedCompile "javax.servlet:javax.servlet-api:$servletApiVersion"
+
+    testCompile "junit:junit-dep:$junitVersion"
+    testCompile "org.springframework:spring-test:$springVersion"
+    testCompile "org.mockito:mockito-core:$mockitoVersion"
+    testCompile "org.hamcrest:hamcrest-library:$hamcrestVersion"
+}
+
+repositories {
+	maven { url 'http://maven.springframework.org/release' }
+	maven { url 'http://maven.springframework.org/milestone' }
+	maven { url 'http://maven.springframework.org/snapshot' }
+	maven { url 'http://download.java.net/maven/2' }
+	mavenCentral()
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.8'
+}
+
+war {
+        baseName = 'spittr'
+}
+
+eclipse {
+        wtp {
+                component {
+                        contextPath = 'spittr'
+                }
+        }
+}
+
+apply plugin: 'maven'
+
+group = 'com.company.root'
+// artifactId is taken by default, from folder name
+version = '0.0.1-SNAPSHOT'
+
+task writeNewPom << {
+    pom {
+        project {
+            inceptionYear '2014'
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+        }
+    }.writeTo("pom.xml")
+}

@@ -13,11 +13,14 @@
 
 ## 第二部分 Web中的Spring
 ### 5. 构建Spring Web应用程序
-
 * [最简单的Spring MVC](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-basic)
 * [路径参数 & 表单提交](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr)
 
 ### 6. 渲染Web视图
+主要是视图模板技术，比如freemarker,velocity,thymeleaf等,放2个官方源码参考吧。
+* [JSP视图](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-jsp)
+* [Thymeleaf视图](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-thymeleaf)
+
 ### 7. Spring Mvc的高级技术
 ### 8. 使用Spring Web Flow
 ### 9. 保护Web应用
