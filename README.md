@@ -21,8 +21,11 @@
 * [JSP视图](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-jsp)
 * [Thymeleaf视图](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-thymeleaf)
 
-### 7. Spring Mvc的高级技术
+### 7. Spring MVC的高级技术
 ### 8. 使用Spring Web Flow
+暂时没用到，放个官方源码，以后在研究。
+[Spring Web Flow](https://github.com/peijie-sh/SpringInAction4/tree/master/SpringPizza)
+
 ### 9. 保护Web应用
 ## 第三部分 后端中的Spring
 ### 10. 通过Spring和JDBC征服数据库

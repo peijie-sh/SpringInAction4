@@ -1,0 +1,70 @@
+apply plugin: 'jetty'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
+version = '4.0.0'
+
+configurations.compile.transitive = true
+
+repositories {
+    mavenCentral()
+    maven { url "http://repo.springsource.org/milestone" }
+}
+
+dependencies {
+    compile "org.springframework:spring-aspects:$springVersion"
+    compile "org.springframework:spring-web:$springVersion"
+    compile "org.springframework:spring-webmvc:$springVersion"
+    compile "org.springframework.webflow:spring-webflow:$springWebflowVersion"
+    compile "org.springframework.webflow:spring-binding:$springWebflowVersion"
+    compile "log4j:log4j:$log4jVersion"
+    compile "org.aspectj:aspectjweaver:$aspectJVersion"
+    compile "org.apache.commons:commons-lang3:$commonsLangVersion"
+
+    compile "javax.servlet:jstl:$jstlVersion"
+    providedCompile "javax.servlet:javax.servlet-api:$servletApiVersion"
+    providedCompile "javax.servlet.jsp:jsp-api:$jspApiVersion"
+    providedCompile "javax.el:javax.el-api:$jspElVersion"
+
+    testCompile "junit:junit:$junitVersion"
+    testCompile "org.mockito:mockito-all:$mockitoVersion"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.1'
+}
+
+war {
+        baseName = 'pizza'
+}
+
+eclipse {
+        wtp {
+                component {
+                        contextPath = 'pizza'
+                }
+        }
+}
+
+
+apply plugin: 'maven'
+
+group = 'com.company.root'
+// artifactId is taken by default, from folder name
+version = '0.0.1-SNAPSHOT'
+
+task writeNewPom << {
+    pom {
+        project {
+            inceptionYear '2014'
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+        }
+    }.writeTo("pom.xml")
+}
