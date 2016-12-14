@@ -17,7 +17,7 @@
 * [路径参数 & 表单提交](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr)
 
 ### 6. 渲染Web视图
-主要是视图模板技术，比如freemarker,velocity,thymeleaf等,放2个官方源码参考吧。
+主要是视图模板技术，比如freemarker,velocity,thymeleaf等，放2个官方源码参考吧。
 * [JSP视图](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-jsp)
 * [Thymeleaf视图](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-thymeleaf)
 
