@@ -17,14 +17,14 @@
 * [路径参数 & 表单提交](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr)
 
 ### 6. 渲染Web视图
-主要是视图模板技术，比如freemarker,velocity,thymeleaf等，放2个官方源码参考吧。
+主要是视图模板技术，比如`freemarker`，`velocity`，`thymeleaf`等，放2个官方源码参考吧。
 * [JSP视图](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-jsp)
 * [Thymeleaf视图](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-thymeleaf)
 
 ### 7. Spring MVC的高级技术
-* servlet3.0之前的搭建方式：使用web.xml配置声明
-* multipart上传数据：MultipartFile类型，@RequestPart注解
-* 统一异常处理：@ExceptionHandler（方法级别，处理具体某种exception），@ControllerAdvice（类级别，集中处理异常方法）
+* servlet3.0之前的搭建方式：使用`web.xml`配置声明
+* multipart上传数据：`MultipartFile`类型，`@RequestPart`注解
+* 统一异常处理：`@ExceptionHandler`（方法级别，处理具体某种exception），`@ControllerAdvice`（类级别，集中处理异常方法）
 * 重定向带参数：RedirectAttributes.addFlashAttribute()
 
 ### 8. 使用Spring Web Flow
@@ -32,8 +32,8 @@
 * [Spring Web Flow](https://github.com/peijie-sh/SpringInAction4/tree/master/SpringPizza)
 
 ### 9. 保护Web应用
-使用Spring security安全框架，权限控制，登录认证，跨站请求保护，jsp标签，thymeleaf标签。
-* [Spring security入门](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-security-basic)
+使用`Spring Security`安全框架，权限控制，登录认证，跨站请求保护，jsp标签，thymeleaf标签。
+* [Spring Security入门](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-security-basic)
 
 ## 第三部分 后端中的Spring
 ### 10. 通过Spring和JDBC征服数据库
