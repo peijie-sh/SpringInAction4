@@ -24,9 +24,12 @@
 ### 7. Spring MVC的高级技术
 ### 8. 使用Spring Web Flow
 暂时没用到，放个官方源码，以后在研究。
-[Spring Web Flow](https://github.com/peijie-sh/SpringInAction4/tree/master/SpringPizza)
+* [Spring Web Flow](https://github.com/peijie-sh/SpringInAction4/tree/master/SpringPizza)
 
 ### 9. 保护Web应用
+使用Spring security安全框架，权限控制，登录认证，跨站请求保护，jsp标签，thymeleaf标签。
+* [Spring security入门](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-security-basic)
+
 ## 第三部分 后端中的Spring
 ### 10. 通过Spring和JDBC征服数据库
 ### 11. 使用对象-关系映射持久化数据
