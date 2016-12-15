@@ -22,6 +22,11 @@
 * [Thymeleaf视图](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-thymeleaf)
 
 ### 7. Spring MVC的高级技术
+* servlet3.0之前的搭建方式：使用web.xml配置声明
+* multipart上传数据：MultipartFile类型，@RequestPart注解
+* 统一异常处理：@ExceptionHandler（方法级别，处理具体某种exception），@ControllerAdvice（类级别，集中处理异常方法）
+* 重定向带参数：RedirectAttributes.addFlashAttribute()
+
 ### 8. 使用Spring Web Flow
 暂时没用到，放个官方源码，以后在研究。
 * [Spring Web Flow](https://github.com/peijie-sh/SpringInAction4/tree/master/SpringPizza)
