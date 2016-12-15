@@ -37,6 +37,9 @@
 
 ## 第三部分 后端中的Spring
 ### 10. 通过Spring和JDBC征服数据库
+封装jdbc样板代码（连接，关闭连接释放资源，错误处理），只关注业务逻辑。
+* [Spring JDBC](https://github.com/peijie-sh/SpringInAction4/tree/master/Spring-jdbc)
+
 ### 11. 使用对象-关系映射持久化数据
 ### 12. 使用NoSQL数据库
 ### 13. 缓存数据
