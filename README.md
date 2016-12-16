@@ -41,6 +41,16 @@
 * [Spring JDBC](https://github.com/peijie-sh/SpringInAction4/tree/master/Spring-jdbc)
 
 ### 11. 使用对象-关系映射持久化数据
+* [集成Hibernate](https://github.com/peijie-sh/SpringInAction4/tree/master/hibernate4)
+* `JPA`配置方式:
+    * spring3.1开始，可在`LocalContainerEntityManagerFactoryBean`设置`packagesToScan`属性，所以不再需要，`persistence.xml`文件了。
+    * [集成JPA](https://github.com/peijie-sh/SpringInAction4/tree/master/jpa-hibernate)
+* `Spring Data`配置方式:
+    * xml方式: `<jpa:repositories>`
+    * java config: `@EnableJpaRepositories`
+    * [使用Spring Data](https://github.com/peijie-sh/SpringInAction4/tree/master/jpa-springdata)
+
+
 ### 12. 使用NoSQL数据库
 ### 13. 缓存数据
 ### 14. 保护方法应用
