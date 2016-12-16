@@ -53,6 +53,23 @@
 
 ### 12. 使用NoSQL数据库
 ### 13. 缓存数据
+* java config方式:`@EnableCaching`
+* xml方式:使用Spring cache命名空间中的`<cache:annotation-driven>`元素来启用注解驱动的缓存。
+* 开启之后需要声明一个`CacheManager`，实现缓存。
+* Spring 3.1内置了5个实现:
+    * SimpleCacheManager
+    * NoOpCacheManager
+    * ConcurrentMapCacheManager
+    * CompositeCacheManager
+    * EhCacheCacheManager
+* Spring Data提供2个实现:
+    * RedisCacheManager（来自于Spring Data Redis项目）
+    * GemfireCacheManager（来自于Spring Data GemFire项目）
+
+* 开启spring cache 注解驱动的缓存后，就可以在方法上使用`@Cacheable`和`@CacheEvict`来控制加入缓存和去除缓存了。
+* 此外，也可以在xml中配置，在具体方法上使用缓存，不过不推荐。
+* [使用Spring Cache](https://github.com/peijie-sh/SpringInAction4/tree/master/caching)
+
 ### 14. 保护方法应用
 ## 第四部分 Spring集成
 ### 15. 使用远程服务
