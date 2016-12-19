@@ -86,6 +86,10 @@ Spring Security提供了三种不同的安全注解:
 ## 第四部分 Spring集成
 ### 15. 使用远程服务
 ### 16. 使用Spring MVC创建REST API
+* 使用`@RequestBody`,`@ResponseBody`,`@RestController`。
+* `ResponseEntity`包含`@ResponseBody`的作用，默认使用消息转换，可添加响应状态和元数据。
+* 使用`@ResponseStatus`指定响应状态。
+
 ### 17. Spring消息
 ### 18. 使用WebSocket和STOMP实现消息功能
 ### 19. 使用Spring发送Email
