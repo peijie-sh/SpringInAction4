@@ -93,5 +93,11 @@ Spring Security提供了三种不同的安全注解:
 ### 17. Spring消息
 ### 18. 使用WebSocket和STOMP实现消息功能
 ### 19. 使用Spring发送Email
+这个比较简单，构造一个bean，注入Spring容器，然后调用api发邮件即可。
+* 简单邮件
+* 带附件的邮件
+* 用模板构造邮件
+* [Spring Mail](https://github.com/peijie-sh/SpringInAction4/tree/master/Spring-mail)
+
 ### 20. 使用JMX管理Spring Bean
 ### 21. 借助Spring Boot简化Spring开发
