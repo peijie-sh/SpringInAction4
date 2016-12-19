@@ -33,6 +33,7 @@
 
 ### 9. 保护Web应用
 使用`Spring Security`安全框架，权限控制，登录认证，跨站请求保护，jsp标签，thymeleaf标签。
+在Web层控制安全。
 * [Spring Security入门](https://github.com/peijie-sh/SpringInAction4/tree/master/Spittr-security-basic)
 
 ## 第三部分 后端中的Spring
@@ -71,6 +72,17 @@
 * [使用Spring Cache](https://github.com/peijie-sh/SpringInAction4/tree/master/caching)
 
 ### 14. 保护方法应用
+方法级别安全保护。一般在Web层之后，比如service层。
+Spring Security提供了三种不同的安全注解:
+* Spring Security自带的@Secured注解: 配置类添加`@EnableGlobalMethodSecurity(securedEnabled=true)`，然后可在方法上使用，限制用户须拥有权限才可执行方法。
+* SR-250的@RolesAllowed注解: 配置类添加`@EnableGlobalMethodSecurity(jsr250Enabled=true)`，然后可在方法上使用，限制用户须拥有权限才可执行方法。
+* 表达式驱动的注解(Spring Security 3.0)
+    * `@PreAuthorize` 在方法调用之前，基于表达式的计算结果来限制对方法的访问
+    * `@PostAuthorize` 允许方法调用，但是如果表达式计算结果为false，将抛出一个安全性异常
+    * `@PostFilter` 允许方法调用，但必须按照表达式来过滤方法的结果
+    * `@PreFilter` 允许方法调用，但必须在进入方法之前过滤输入值
+* [Spring Security Methods](https://github.com/peijie-sh/SpringInAction4/tree/master/Sprittr-security-method)
+
 ## 第四部分 Spring集成
 ### 15. 使用远程服务
 ### 16. 使用Spring MVC创建REST API
