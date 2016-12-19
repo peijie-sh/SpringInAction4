@@ -75,7 +75,7 @@
 方法级别安全保护。一般在Web层之后，比如service层。
 Spring Security提供了三种不同的安全注解:
 * Spring Security自带的@Secured注解: 配置类添加`@EnableGlobalMethodSecurity(securedEnabled=true)`，然后可在方法上使用，限制用户须拥有权限才可执行方法。
-* SR-250的@RolesAllowed注解: 配置类添加`@EnableGlobalMethodSecurity(jsr250Enabled=true)`，然后可在方法上使用，限制用户须拥有权限才可执行方法。
+* JSR-250的@RolesAllowed注解: 配置类添加`@EnableGlobalMethodSecurity(jsr250Enabled=true)`，然后可在方法上使用，限制用户须拥有权限才可执行方法。
 * 表达式驱动的注解(Spring Security 3.0)
     * `@PreAuthorize` 在方法调用之前，基于表达式的计算结果来限制对方法的访问
     * `@PostAuthorize` 允许方法调用，但是如果表达式计算结果为false，将抛出一个安全性异常
