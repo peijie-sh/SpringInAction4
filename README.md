@@ -101,3 +101,5 @@ Spring Security提供了三种不同的安全注解:
 
 ### 20. 使用JMX管理Spring Bean
 ### 21. 借助Spring Boot简化Spring开发
+* 减少配置，快速构建服务。
+* [Spring Boot](https://github.com/peijie-sh/SpringInAction4/tree/master/springboot)
