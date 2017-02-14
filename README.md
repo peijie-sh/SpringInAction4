@@ -57,7 +57,18 @@
     * 使用`@Document`标记文档对象
 * `Neo4j` 图数据库
 * `Redis` 高性能Key-Value数据库，可用作缓存数据库。
-    * 使用`jedis`对象连接redis，构造`redisTemplate`
+    * 4种连接工厂:`JedisConnectionFactory`,`JredisConnectionFactory`,`LettuceConnectionFactory`,`SrpConnectionFactory`;
+    * 2种数据模板:
+        * `RedisTemplate`支持所有数据类型;
+        * `StringRedisTemplate`扩展了`RedisTemplate`，只关注`String`类型;
+    * 多种序列化器: [比如，将key序列化为String，将value序列化为json]
+        * `GenericToStringSerializer`：使用Spring转换服务进行序列化；
+        * `JacksonJsonRedisSerializer`：使用Jackson 1，将对象序列化为JSON；
+        * `Jackson2JsonRedisSerializer`：使用Jackson 2，将对象序列化为JSON；
+        * `JdkSerializationRedisSerializer`：使用Java序列化；
+        * `OxmSerializer`：使用Spring O/X映射的编排器和解排器（marshaler和unmarshaler）实现
+    序列化，用于XML序列化；
+        * `StringRedisSerializer`：序列化String类型的key和value。
 
 ### 13. 缓存数据
 * java config方式:`@EnableCaching`
