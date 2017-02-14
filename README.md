@@ -51,8 +51,11 @@
     * java config: `@EnableJpaRepositories`
     * [使用Spring Data](https://github.com/peijie-sh/SpringInAction4/tree/master/jpa-springdata)
 
-
 ### 12. 使用NoSQL数据库
+* `MongoDB` 文档关系数据库，保存类似json对象。[`@Document`]
+* `Neo4j` 图数据库
+* `Redis` 高性能Key-Value数据库，可用作缓存数据库。
+
 ### 13. 缓存数据
 * java config方式:`@EnableCaching`
 * xml方式:使用Spring cache命名空间中的`<cache:annotation-driven>`元素来启用注解驱动的缓存。
