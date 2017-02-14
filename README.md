@@ -52,9 +52,12 @@
     * [使用Spring Data](https://github.com/peijie-sh/SpringInAction4/tree/master/jpa-springdata)
 
 ### 12. 使用NoSQL数据库
-* `MongoDB` 文档关系数据库，保存类似json对象。[`@Document`]
+* `MongoDB` 文档关系数据库，保存类似json对象。
+    * 构建`MongoClient`和`MongoRepository`
+    * 使用`@Document`标记文档对象
 * `Neo4j` 图数据库
 * `Redis` 高性能Key-Value数据库，可用作缓存数据库。
+    * 使用`jedis`对象连接redis，构造`redisTemplate`
 
 ### 13. 缓存数据
 * java config方式:`@EnableCaching`
