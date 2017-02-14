@@ -52,11 +52,11 @@
     * [使用Spring Data](https://github.com/peijie-sh/SpringInAction4/tree/master/jpa-springdata)
 
 ### 12. 使用NoSQL数据库
-* `MongoDB` 文档关系数据库，保存类似json对象。[MongoDB](https://github.com/peijie-sh/SpringInAction4/tree/master/mongo)
+* `MongoDB` 文档关系数据库，保存类似json对象。[使用Spring Data MongoDB](https://github.com/peijie-sh/SpringInAction4/tree/master/mongo)
     * 构建`MongoClient`和`MongoRepository`;
     * 使用`@Document`标记文档对象;
-* `Neo4j` 图数据库,暂时没研究，丢个demo先。[Neo4j](https://github.com/peijie-sh/SpringInAction4/tree/master/neo4j)
-* `Redis` 高性能Key-Value数据库，可用作缓存数据库。[Redis](https://github.com/peijie-sh/SpringInAction4/tree/master/redis)
+* `Neo4j` 图数据库,暂时没研究，丢个demo先。[使用Spring Data Neo4j](https://github.com/peijie-sh/SpringInAction4/tree/master/neo4j)
+* `Redis` 高性能Key-Value数据库，可用作缓存数据库。[使用Spring Data Redis](https://github.com/peijie-sh/SpringInAction4/tree/master/redis)
     * 4种连接工厂:`JedisConnectionFactory`,`JredisConnectionFactory`,`LettuceConnectionFactory`,`SrpConnectionFactory`;
     * 2种数据模板:
         * `RedisTemplate`支持所有数据类型;
