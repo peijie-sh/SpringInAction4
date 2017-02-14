@@ -52,11 +52,13 @@
     * [使用Spring Data](https://github.com/peijie-sh/SpringInAction4/tree/master/jpa-springdata)
 
 ### 12. 使用NoSQL数据库
-* `MongoDB` 文档关系数据库，保存类似json对象。[使用Spring Data MongoDB](https://github.com/peijie-sh/SpringInAction4/tree/master/mongo)
+* `MongoDB` 文档关系数据库，保存类似json对象。
     * 构建`MongoClient`和`MongoRepository`;
     * 使用`@Document`标记文档对象;
-* `Neo4j` 图数据库,暂时没研究，丢个demo先。[使用Spring Data Neo4j](https://github.com/peijie-sh/SpringInAction4/tree/master/neo4j)
-* `Redis` 高性能Key-Value数据库，可用作缓存数据库。[使用Spring Data Redis](https://github.com/peijie-sh/SpringInAction4/tree/master/redis)
+    * [使用Spring Data MongoDB](https://github.com/peijie-sh/SpringInAction4/tree/master/mongo)
+* `Neo4j` 图数据库,暂时没研究，丢个demo先。
+    * [使用Spring Data Neo4j](https://github.com/peijie-sh/SpringInAction4/tree/master/neo4j)
+* `Redis` 高性能Key-Value数据库，可用作缓存数据库。
     * 4种连接工厂:`JedisConnectionFactory`,`JredisConnectionFactory`,`LettuceConnectionFactory`,`SrpConnectionFactory`;
     * 2种数据模板:
         * `RedisTemplate`支持所有数据类型;
@@ -69,7 +71,8 @@
         * `OxmSerializer`:使用Spring O/X映射的编排器和解排器（marshaler和unmarshaler）实现
     序列化，用于XML序列化;
         * `StringRedisSerializer`:序列化String类型的key和value;
-
+    * [使用Spring Data Redis](https://github.com/peijie-sh/SpringInAction4/tree/master/redis)
+    
 ### 13. 缓存数据
 * java config方式:`@EnableCaching`
 * xml方式:使用Spring cache命名空间中的`<cache:annotation-driven>`元素来启用注解驱动的缓存。
