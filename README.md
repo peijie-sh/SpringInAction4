@@ -115,6 +115,10 @@ Spring Security提供了三种不同的安全注解:
 * [AMQP](https://github.com/peijie-sh/SpringInAction4/tree/master/amqp)
 
 ### 18. 使用WebSocket和STOMP实现消息功能
+* [STOMP](https://github.com/peijie-sh/SpringInAction4/tree/master/STOMP)
+* [STOMPUser](https://github.com/peijie-sh/SpringInAction4/tree/master/STOMPUser)
+* [WebSocket](https://github.com/peijie-sh/SpringInAction4/tree/master/WebSocket)
+
 ### 19. 使用Spring发送Email
 这个比较简单，构造一个bean，注入Spring容器，然后调用api发邮件即可。
 * 简单邮件
