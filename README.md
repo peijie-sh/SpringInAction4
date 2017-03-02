@@ -4,10 +4,13 @@
 
 ## 第一部分 Spring的核心
 ### 1. Spring之旅
+* [demo](https://github.com/peijie-sh/SpringInAction4/tree/master/knight)
 
 ### 2. 装配Bean
+* [管理Bean](https://github.com/peijie-sh/SpringInAction4/tree/master/Spring-bean)
 
 ### 3. 高级装配
+* [高级装配](https://github.com/peijie-sh/SpringInAction4/tree/master/Spring-bean-plus)
 
 ### 4. 面向切面的Spring
 
@@ -28,7 +31,7 @@
 * 重定向带参数：RedirectAttributes.addFlashAttribute()
 
 ### 8. 使用Spring Web Flow
-暂时没用到，放个官方源码，以后在研究。
+留个官方demo，用到再看
 * [Spring Web Flow](https://github.com/peijie-sh/SpringInAction4/tree/master/SpringPizza)
 
 ### 9. 保护Web应用
@@ -111,10 +114,12 @@ Spring Security提供了三种不同的安全注解:
 * 使用`@ResponseStatus`指定响应状态。
 
 ### 17. Spring消息
+留个官方demo，用到再看
 * [JMS](https://github.com/peijie-sh/SpringInAction4/tree/master/jms)
 * [AMQP](https://github.com/peijie-sh/SpringInAction4/tree/master/amqp)
 
 ### 18. 使用WebSocket和STOMP实现消息功能
+留个官方demo，用到再看
 * [STOMP](https://github.com/peijie-sh/SpringInAction4/tree/master/STOMP)
 * [STOMPUser](https://github.com/peijie-sh/SpringInAction4/tree/master/STOMPUser)
 * [WebSocket](https://github.com/peijie-sh/SpringInAction4/tree/master/WebSocket)
