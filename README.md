@@ -111,6 +111,9 @@ Spring Security提供了三种不同的安全注解:
 * 使用`@ResponseStatus`指定响应状态。
 
 ### 17. Spring消息
+* [JMS](https://github.com/peijie-sh/SpringInAction4/tree/master/jms)
+* [AMQP](https://github.com/peijie-sh/SpringInAction4/tree/master/amqp)
+
 ### 18. 使用WebSocket和STOMP实现消息功能
 ### 19. 使用Spring发送Email
 这个比较简单，构造一个bean，注入Spring容器，然后调用api发邮件即可。
